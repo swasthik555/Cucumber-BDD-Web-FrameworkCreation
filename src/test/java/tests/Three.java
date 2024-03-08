@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import resources.Base;
 
 public class Three extends Base{
@@ -15,6 +16,9 @@ public class Three extends Base{
 	
 	@Test
 	public void three() throws IOException, InterruptedException {
+		
+		System.out.println("Sanjay has updated the code");
+		
 		System.out.println("Three");
 		driver = initializeDriver();
 		
